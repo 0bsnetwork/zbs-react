@@ -52,9 +52,9 @@ android {
 ## Android
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
 
-Add `import com.reactlibrary.RN0bsnetworkPackage;` to the imports at the top of the file
+   Add `import com.reactlibrary.RN0bsnetworkPackage;` to the imports at the top of the file
 
-Add `new RN0bsnetworkPackage()` to the list returned by the `getPackages()` method
+   Add `new RN0bsnetworkPackage()` to the list returned by the `getPackages()` method
 
 
 2. Append the following lines to `android/settings.gradle:`
@@ -63,7 +63,7 @@ Add `new RN0bsnetworkPackage()` to the list returned by the `getPackages()` meth
 
 include ':zbs-react'
 
-project(':zbs-react').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-0bsnetwork/android')
+project(':zbs-react').projectDir = new File(rootProject.projectDir, '../node_modules/zbs-react/android')
 
 ```
 
